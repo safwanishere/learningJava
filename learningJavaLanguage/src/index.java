@@ -6,5 +6,13 @@ public class Index {
         if (true){
             System.out.println("condition true");
         }
+
+        int data = 1;
+
+        while (data <= 10){
+            System.out.println(data);
+            data = data + 1;
+        }
+
     }
 }
