@@ -28,16 +28,18 @@ public class Dayfive {
         //     System.out.println(array[i]);	
         // }
         
-        // Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
-        // int inputNum = scan.nextInt();
+        int inputNum = scan.nextInt();
 
-        // for(int i = 1; i<=inputNum; i++){
-        //     for (int j = 1; j<=i; j++){
-        //         System.out.print(i+" ");
-        //     }
-        //     System.out.println();
-        // }
+        for(int i = 1; i<=inputNum; i++){
+            for (int j = 1; j<=i; j++){
+                System.out.print(i+" ");
+            }
+            System.out.println();
+        }
+
+        scan.close();
 
         // Scanner scan = new Scanner(System.in);
 

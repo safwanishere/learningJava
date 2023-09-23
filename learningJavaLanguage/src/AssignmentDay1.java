@@ -19,14 +19,14 @@ public class AssignmentDay1 {
         System.out.println(c);
 
         // Relational Operators
-        System.out.println(67 == 67);
+        System.out.println(67 == 89);
         System.out.println(56 > 12);
         System.out.println(34 < 9);
 
         // Logical operators
-        System.out.println(45==45 && 20==20);
+        System.out.println(45==44);
         System.out.println(90<67 || 78>=23);
-        System.out.println(!(67 == 67));
+        System.out.println(!(67 == 65));
 
         // Unary operators
         int d = 15;

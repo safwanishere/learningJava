@@ -51,5 +51,6 @@ public class Daythree {
             System.out.println(c + " C is greater than A and B");
         }
         
+        scan.close();
     }
 }
