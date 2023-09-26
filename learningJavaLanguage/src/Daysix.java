@@ -136,5 +136,7 @@ class Daysix{
             }
             System.out.println();
         }
+
+        scan.close();
     }
 }
