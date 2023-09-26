@@ -2,9 +2,36 @@ import java.util.*;
 
 public class DayEight {
     public static void main(String args[]){
-        sumOfDigits();
-        sumInRange();
-        zeroesInSum();
+        // sumOfDigits();
+        // sumInRange();
+        // zeroesInSum();
+
+        // add();     
+        
+        
+        int result = countDigit(56789); 
+        System.out.println(result); 
+    }
+
+    public static int countDigit(int n){
+        int count =0;
+        while(n>0){
+            count += 1;
+            n /= 10;
+        }
+        return count;
+    }
+
+
+    public static void add(){
+        
+        Scanner scan = new Scanner(System.in);
+        int n1 = scan.nextInt();
+        int n2 = scan.nextInt();
+        int n3 = scan.nextInt();
+        int n4 = scan.nextInt();
+        int res =(n1+n2+n3+n4);
+        System.out.println(res);
     }
 
     public static void sumOfDigits(){
