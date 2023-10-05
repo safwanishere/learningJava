@@ -5,6 +5,9 @@ public class Hierarchical {
 
         Goat goat = new Goat();
         goat.sound();
+        
+        float f = 5050/100f;
+        System.out.println(f);
     }    
 }
 
