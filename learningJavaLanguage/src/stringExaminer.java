@@ -1,10 +1,7 @@
 public class stringExaminer {
     public static void main(String args[]){
-        String name = "Umer$12_programmer";
-        int vowelCount = 0;
-        int digitCount = 0;
-        int consCount = 0;
-        int specCount = 0;
+        String name = "Umer$1289_programmer";
+        int vowelCount = 0, digitCount = 0, consCount = 0, specCount = 0, count = 0;
 
         name = name.toUpperCase();
 
@@ -15,17 +12,20 @@ public class stringExaminer {
             else if (name.charAt(i) == '$' || name.charAt(i) == '_'){
                 specCount += 1;
             }
-            else if (name.charAt(i) == '1' || name.charAt(i) == '2'){
+            else if (name.charAt(i) >= '0' && name.charAt(i) <= '9'){
                 digitCount += 1;
             }
             else{
                 consCount += 1;
             }
+            count += 1;
         }
 
         System.out.println("vowel count: " + vowelCount);
         System.out.println("digit count: " + digitCount);
         System.out.println("consonants count: " + consCount);
         System.out.println("special characters: " + specCount);
+        System.out.println();
+        System.out.println("total characters: " + count);
     }
 }

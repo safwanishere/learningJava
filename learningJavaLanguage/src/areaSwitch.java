@@ -9,7 +9,7 @@ public class areaSwitch {
         System.out.println();
 
         switch (input){
-            case 1:
+            case 1: 
                 System.out.println("area of a triangle : 1/2 * base * height");
                 break;
             case 2:

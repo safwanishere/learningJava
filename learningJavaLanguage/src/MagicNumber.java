@@ -4,7 +4,7 @@ public class MagicNumber {
     public static void main(String args[]){
         Scanner scan = new Scanner(System.in);
         int input = scan.nextInt();
-        int inp = input;
+        int inp = input, check = 0;
 
         int sum = 0, rem, rev = 0;
 
@@ -13,6 +13,7 @@ public class MagicNumber {
             sum += rem;
 
             input /= 10;
+            check += i;
         }
 
         System.out.println(sum);
@@ -22,7 +23,10 @@ public class MagicNumber {
             rev = rev * 10 + rem;
 
             sum /= 10;
+            check += i;
         }
+
+        check += check;
 
         System.out.println(rev);
         System.out.println();
@@ -32,6 +36,8 @@ public class MagicNumber {
         } else {
             System.out.println(inp + " is not a magic number");
         }
+
+        scan.close();
         
     }
 }
