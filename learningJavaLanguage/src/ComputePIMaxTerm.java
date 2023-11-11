@@ -17,4 +17,4 @@ public class ComputePIMaxTerm {
 
         System.out.println("comparison: "+((Pi/Math.PI)*100));
     }
-}
+} 
