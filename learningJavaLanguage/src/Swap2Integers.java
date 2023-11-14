@@ -13,6 +13,6 @@ public class Swap2Integers {
         numOne = numTwo;
         numTwo = temp;
 
-        System.out.println("After the swap, fisrt integer is: "+numOne+", second intger is: "+ numTwo);
+        System.out.println("After the swap, fisrt integer is: "+numOne+", second integer is: "+ numTwo);
     }
 }
