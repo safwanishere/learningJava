@@ -21,6 +21,7 @@ public class AverageWithInputValidation {
 
             }
         }
+        scan.close();
         System.out.printf("The average is: %.2f%n",(double)(sum)/3);
     }
 }

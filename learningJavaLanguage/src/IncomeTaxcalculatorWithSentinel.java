@@ -31,5 +31,6 @@ public class IncomeTaxcalculatorWithSentinel {
                 System.out.println();
             }
         }
+        scan.close();
     }
 }

@@ -32,6 +32,8 @@ public class DayEight {
         int n4 = scan.nextInt();
         int res =(n1+n2+n3+n4);
         System.out.println(res);
+
+        scan.close();
     }
 
     public static void sumOfDigits(){
@@ -47,6 +49,8 @@ public class DayEight {
             number /= 10;
             sum += rem;
         }
+
+        scan.close();
 
         System.out.println("the sum of the digits of " + initNumber + " is " + sum);
     }
@@ -70,6 +74,7 @@ public class DayEight {
         } else {
             System.out.println("sum of " + initNumber + " : " + sum + " does not lies between 100 and 200");
         }
+        scan.close();
     }
 
     public static void zeroesInSum(){

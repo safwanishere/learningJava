@@ -14,5 +14,6 @@ public class ReverseInt {
             System.out.print(dig);
             inputInt /= 10;
         }
+        scan.close();
     }
 }

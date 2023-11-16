@@ -15,5 +15,6 @@ public class InputValidation {
                 System.out.println("Invalid input, try again...");
             }
         }
+        scan.close();
     }
 }

@@ -11,18 +11,6 @@ public class Inheritance {
 
         Baby b = new Baby();
         b.age = 2;
-
-        System.out.println(gp.age);
-        System.out.println(gp.gen);
-
-        System.out.println(p.age);
-        System.out.println(p.gen);
-
-        System.out.println(c.age);
-        System.out.println(c.gen);
-
-        System.out.println(b.age);
-        System.out.println(b.gen);
     }
 }
 

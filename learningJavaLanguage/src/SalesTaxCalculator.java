@@ -27,5 +27,6 @@ public class SalesTaxCalculator {
                 salesTaxTotal += salesTax;
             }
         }
+        scan.close();
     }    
 }

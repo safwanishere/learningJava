@@ -7,6 +7,7 @@ public class Swap2Integers {
         int numOne = scan.nextInt();
         System.out.print("Enter second integer: ");
         int numTwo = scan.nextInt();
+        scan.close();
 
         int temp;
         temp = numOne;

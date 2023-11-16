@@ -25,5 +25,6 @@ public class PensionContributionCalculatorWithSentinel {
                 System.out.println();
             }
         }
+        scan.close();
     }
 }

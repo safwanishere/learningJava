@@ -13,6 +13,7 @@ public class SumOfDigitsInt{
             sum += dig;
             inputInt /= 10;
         }
+        scan.close();
         System.out.print("The sum of all digits is: "+sum);
     }
 }
