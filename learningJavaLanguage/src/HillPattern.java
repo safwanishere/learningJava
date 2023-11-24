@@ -22,7 +22,7 @@ public class HillPattern {
         // B bit
         for (int row = 1; row <= size; row++){
             for (int col = 1; col <= (size*2); col++){
-                if (col+row<=(row+1) || (col>=row-size+1)){
+                if (col>=row && col<=((size*2)-row)){
                     System.out.print("# ");
                 } else {
                     System.out.print("  ");
@@ -31,6 +31,42 @@ public class HillPattern {
             System.out.println();
         }
         System.out.println();
+
+        // C Bit
+        for (int row = 1; row <= size; row++){
+            for (int col = 1; col <= (size*2); col++){
+                if ((row + col >= size+1) && (row>=col-size+1)){
+                    System.out.print("# ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        for (int row = 2; row <= size; row++){
+            for (int col = 1; col <= (size*2); col++){
+                if (col>=row && col<=((size*2)-row)){
+                    System.out.print("# ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        // D Bit
+        // for (int row = 1; row <= (size*2-1); row++){
+        //     for (int col = 1; col <= (size*2-1); col++){
+        //         if (){
+        //             System.out.print("  ");
+        //         } else {
+        //             System.out.print("# ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
 
     }
 }
