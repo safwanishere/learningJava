@@ -7,10 +7,11 @@ public class CircularPrime {
         int num = scan.nextInt();
         scan.close();
 
+        System.out.println(checkPrime(num));
         
     }
 
-    public boolean checkPrime(int num){
+    public static boolean checkPrime(int num){
         boolean bool = false;
         for (int i = 2; i<num; i++){
             if (num%i == 0){
