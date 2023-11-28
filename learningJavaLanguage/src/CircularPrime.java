@@ -8,7 +8,6 @@ public class CircularPrime {
         scan.close();
 
         System.out.println(checkPrime(num));
-        
     }
 
     public static boolean checkPrime(int num){
