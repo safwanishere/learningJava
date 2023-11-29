@@ -16,9 +16,14 @@ public class CapricornNumber {
         }
 
         for (int i = 1; i<count; i++){
-            
-            if ( == num){
+            int divisor = (int) Math.pow(10, i);
+            int firstPart = squareOfNum / divisor;
+            int secondPart = squareOfNum % divisor;
+
+            if ( firstPart + secondPart == num){
                 System.out.println(num + " is a Capricorn/Kaprekar number");
+                check = true;
+                break;
             }
             else {
                 check = false;
