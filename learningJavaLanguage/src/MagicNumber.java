@@ -3,41 +3,25 @@ import java.util.Scanner;
 public class MagicNumber {
     public static void main(String args[]){
         Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a number: ");
         int input = scan.nextInt();
-        int inp = input, check = 0;
-
-        int sum = 0, rem, rev = 0;
-
-        for (int i = 0; input>0; i++){
-            rem = input%10;
-            sum += rem;
-
-            input /= 10;
-            check += i;
-        }
-
-        System.out.println(sum);
-        
-        for (int i = 0; sum>0; i++){
-            rem = sum%10;
-            rev = rev * 10 + rem;
-
-            sum /= 10;
-            check += i;
-        }
-
-        check += check;
-
-        System.out.println(rev);
-        System.out.println();
-
-        if (sum*rev == input){
-            System.out.println(inp + " is a magic number");
-        } else {
-            System.out.println(inp + " is not a magic number");
-        }
-
         scan.close();
-        
+
+        int sumOfDigits = 0, dig, num = input;
+
+        do {
+            sumOfDigits = 0;
+            for (int i = num; i>0; i/=10){
+                dig = i%10;
+                sumOfDigits += dig;
+            }
+            num = sumOfDigits;
+        } while (sumOfDigits>=10);
+
+        if (sumOfDigits == 1){
+            System.out.println(input + " is a Magic Number");
+        } else {
+            System.out.println(input + " is not a Magic Number");
+        }
     }
 }
