@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class CaesarCode{
+public class DecipherCaesarCode{
     public static void main(String args[]){
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter a plaintext string: ");
+        System.out.print("Enter a ciphertext string: ");
         String input = scan.next().toUpperCase();
         scan.close();
 
@@ -12,17 +12,17 @@ public class CaesarCode{
         for (int charId = 0; charId<stringLen; charId++){
             char character = input.charAt(charId);
  
-            if (character == 'X'){
-                System.out.print('A');
+            if (character == 'A'){
+                System.out.print('X');
             }
-            else if (character == 'Y'){
-                System.out.print('B');
+            else if (character == 'B'){
+                System.out.print('Y');
             }
-            else if (character == 'Z'){
-                System.out.print('C');
+            else if (character == 'C'){
+                System.out.print('Z');
             }
             else {
-                System.out.print((char) (character + 3));
+                System.out.print((char) (character - 3));
             }
         }
     }

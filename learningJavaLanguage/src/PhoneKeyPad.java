@@ -4,7 +4,7 @@ public class PhoneKeyPad{
     public static void main(String args[]){
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a String: ");
-        String input = scan.next().toLowerCase;
+        String input = scan.next().toLowerCase();
         scan.close();
 
         int stringLen = input.length();
