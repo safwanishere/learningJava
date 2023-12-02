@@ -21,6 +21,7 @@ public class HappyNumber {
                     check = true;
                     break;
                 } else {
+                    System.out.println(sumOfSquareOfDig);
                     check = false;
                     break;
                 }
