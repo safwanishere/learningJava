@@ -19,10 +19,6 @@ public class CheckHexStr{
                 check = false;
                 break;
             }
-            else {
-                check = true;
-                continue;
-            }
         }
         
         System.out.println(check ? (input + " is a hex string") : (input + " is not a hex string"));
