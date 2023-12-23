@@ -16,7 +16,7 @@ public class GradesStatisticsArray{
         System.out.printf("The median is: %.2f", median(grades));
         System.out.println("\nThe minimum is: " + min(grades));
         System.out.println("The maximum is: " + max(grades));
-        System.out.printf("The standard deviation is %.2f", stdDev(grades));
+        System.out.printf("The standard deviation is: %.2f", stdDev(grades));
     }
 
     public static void readGrades(int[] array){

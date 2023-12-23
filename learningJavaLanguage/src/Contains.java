@@ -1,10 +1,11 @@
 public class Contains{
     public static void main(String args[]){
-        int[] array = new int[4];
-        array[0] = 1;
-        array[1] = 6;
-        array[2] = 4;
-        array[3] = 9;
+        int[] array = {1,6,2,9};
+        //new int[4];
+        // array[0] = 1;
+        // array[1] = 6;
+        // array[2] = 4;
+        // array[3] = 9;
 
         int key = 2;
 
