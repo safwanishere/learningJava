@@ -23,7 +23,7 @@ public class GradesHistogram{
             else if (grade>=20 && grade<=29){
                 twenty += 1;
             }
-            else if (grade>=30 && grade<319){
+            else if (grade>=30 && grade<39){
                 thirty += 1;
             }
             else if (grade>=40 && grade<=49){
