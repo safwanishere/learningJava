@@ -2,6 +2,9 @@ import java.io.Console;
 
 public class Main{
     public static void main(String args[]){
+        CyberTruck ct = new CyberTruck();
+        System.out.println(CyberTruck.wheels);
+
         Console console = System.console();
         if (console != null) {
             // Reading input from the console
@@ -14,4 +17,20 @@ public class Main{
             System.out.println("Console is not available.");
         }
     }
+}
+
+class Car{
+    String brand;
+    String fuel;
+    static int wheels = 4;
+}
+
+class CyberTruck extends Car{
+    String brand = "Tesla";
+    String fuel = "electric";
+}
+
+class Corvette extends Car{
+    String brand = "Chevrolet";
+    String fuel = "petrol";
 }
