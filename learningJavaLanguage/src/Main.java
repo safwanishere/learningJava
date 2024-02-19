@@ -1,21 +1,9 @@
 import java.io.Console;
+import static java.lang.System.*;
 
 public class Main{
     public static void main(String args[]){
-        CyberTruck ct = new CyberTruck();
-        System.out.println(CyberTruck.wheels);
-
-        Console console = System.console();
-        if (console != null) {
-            // Reading input from the console
-            String inputLine = console.readLine("Enter something: ");
-            char[] password = console.readPassword("Enter password: ");
-            // Writing output to the console
-            console.writer().println("You entered: " + inputLine);
-            console.writer().println("Your password: " + new String(password));
-        } else {
-            System.out.println("Console is not available.");
-        }
+        out.println("hello");
     }
 }
 
